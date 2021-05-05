@@ -1,17 +1,35 @@
 
 .navbar {
-    background-color:#171a21;
+    background-color:#F5F5F5;
     height: 80px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
 
-.menu-bars {
-    margin-left: 2rem;
+.home {
+    padding: 1rem;
     font-size: 2rem;
     background: none;
+    text-decoration: none;
+}
+.home:link, .home:visited {
+    color: #010714;
+}
+.navbar-buttons {
+    position: relative;
+    left: 42%;
+    padding: 1rem;
+    font-size: 2rem;
+    background: none;
+    text-decoration: none;
+}
+.navbar-buttons:link, .navbar-buttons:visited {
+    color: #010714;
+}
+
+.navbar-buttons:hover {
+    background: #E0E0E0;
 }
 
 .navbar-h1 {
@@ -22,17 +40,7 @@
     color:#c7d5e0;
 }
 
-.nav-menu {
-    background-color:#171a21;
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 850ms;
-}
+
 
 .nav-menu.active {
     left: 0;
