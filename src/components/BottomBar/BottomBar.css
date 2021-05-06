@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 
-.Contact {
+.contact-section {
+  background-color:#F5F5F5;
+  display: block;
   text-align: center;
-  background-color: #010714;
-  min-height: 100vh;
-  font-size: calc(10px + 2vmin);
-  color: #F5F5F5;
   font-family: 'Poppins', sans-serif;
-}
-.header {
-  box-sizing: border-box;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.desc-text {
-  background-color: #010714;
-  display: flex;
-  flex-direction: column;
   font-weight: 200;
+  padding-top: 5px;
+  color: #010714;
 }
 
+a {
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-
-
+a:link, a:visited {
+  color: #010714;
+}
 
 

@@ -3,7 +3,7 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
-
+// There are comments on where you need to change values.
 var transport = {
     host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider (Using Gmail currently)
     port: 587,
@@ -31,7 +31,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'EMAIL HERE',  // Change to email address that you want to receive messages on
+    to: "EMAIL HERE",  // Change to email address that you want to receive messages on
     subject: 'New Message from Contact Form',
     text: content
   }
@@ -47,7 +47,7 @@ router.post('/send', (req, res, next) => {
       })
     }
     transporter.sendMail({
-      from: "EMAIL HERE", //Change to the website email (that you used from config).
+      from: "EMAIL HERE", // Change to the website email (that you used from config).
       to: email,
       subject: "Submission was successful",
       text: `Thank you for contacting us!\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`

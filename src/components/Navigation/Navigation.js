@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navigation.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// Nothing is changed here unless you want to add more pages
 function Navigation() {
     return (
        <>
@@ -11,7 +12,7 @@ function Navigation() {
             <Link to="/About" className='navbar-buttons'>
                 About
             </Link>
-            <Link to="/Work" className='navbar-buttons'>
+            <Link to="/WorkP" className='navbar-buttons'>
                 Work
             </Link>
             <Link to="/Contact" className='navbar-buttons'>

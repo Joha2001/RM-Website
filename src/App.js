@@ -4,8 +4,10 @@ import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
 import Navigation from './components/Navigation/Navigation.js'
 import Contact from './components/Contact/Contact.js';
-import Work from './components/Work/Work.js';
-class App extends Component {
+import WorkP from './components/Work/WorkP.js';
+import WorkV from './components/Work/WorkV.js';
+import BottomBar from './components/BottomBar/BottomBar.js';
+class App extends Component { // Nothing needs to be changed here unless adding new pages.
   render() {
     return (      
       <BrowserRouter>
@@ -14,8 +16,10 @@ class App extends Component {
            <Route path="/" component={Home} exact/>
            <Route path="/About" component={About}/>
            <Route path = "/Contact" component={Contact}/>
-           <Route path ="/Work" component={Work}/>
+           <Route path ="/WorkP" component={WorkP}/>
+           <Route path ="/WorkV" component={WorkV}/>
          </Switch>
+         <BottomBar />
     </BrowserRouter>
     );
   }

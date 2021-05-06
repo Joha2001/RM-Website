@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import axios from 'axios';
+/* Only slight changes will occur in this page, unless specific content needs to be added.
+   Refer to config.js and server.js to alter any details to the emails that are sent. */
 const Contact = () => {
   const [Cname,setName]=useState("")
   const [Cemail,setEmail]=useState("")
@@ -24,13 +26,12 @@ const Contact = () => {
   
   function sendMail()
   {
-    if ((Cname === "") || (Cemail === "") || (Cmessage === "")) { 
-      //This verifies that all parts are filled out, can change if to else if to only send 1 alert.
+    if ((Cname === "") || (Cemail === "") || (Cmessage === "")) { // Change text within alert, if wanted.
       if (Cname === "")
         alert("Please fill out a name!");
-      if (Cemail === "")
+      if (Cemail === "") // Change if to else if to send only the first alert (if all three are issues)
         alert("Please fill out an email!");
-      if (Cmessage === "")
+      if (Cmessage === "") // Change if to else if to send only the first or second alert
         alert("Please give a short message!");
     }
     else {

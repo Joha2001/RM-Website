@@ -7,6 +7,7 @@
   font-size: calc(10px + 2vmin);
   color: #F5F5F5;
   font-family: 'Poppins', sans-serif;
+  padding-bottom: 40px;
 }
 .header {
   box-sizing: border-box;
@@ -16,7 +17,7 @@
 }
 
 .button {
-  background-color: #F5F5F5; /* Green */
+  background-color: #F5F5F5; 
   border: none;
   color: #010714;
   padding: 15px 32px;
@@ -40,10 +41,6 @@ input[type=text], [type=email] {
   padding: 10px;
   background-color:#F5F5F5;
   font-family: 'Poppins', sans-serif;
-}
-
-label {
-  text-align: left;
 }
 
 textarea {
