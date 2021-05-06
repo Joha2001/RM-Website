@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 
-.Home {
+.Contact {
   text-align: center;
   background-color: #010714;
   min-height: 100vh;
@@ -12,6 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .desc-text {
   background-color: #010714;
@@ -20,17 +21,7 @@
   font-weight: 200;
 }
 
-.left-Home {
-  padding-top: 10vh;
-  width: 60%;
-  height: 500px;
-  float:left;
-}
 
-img{
-  border-radius: 8px;
-  border: 5px solid #F5F5F5;
-}
 
 
 

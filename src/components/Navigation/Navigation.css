@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .navbar {
     background-color:#F5F5F5;
     height: 80px;
     display: block;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .home {
@@ -12,6 +13,7 @@
     background: none;
     text-decoration: none;
     float: left;
+    font-family: 'Poppins', sans-serif;
 }
 .home:link, .home:visited {
     color: #010714;
@@ -22,6 +24,7 @@
     font-size: 2rem;
     background: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 .navbar-buttons:link, .navbar-buttons:visited {
     color: #010714;

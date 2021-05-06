@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.png';
 import './Home.css';
-import { useHistory } from "react-router-dom"
+import logo from './logo.png' /* <---- Place the image in the Home folder and change the name to logo.png 
+Alternatively, you can change the path from logo.png to the filename of your choice.*/
 const Home = () => {
-
-    const history = useHistory(); //History allows for button to navigate to another page.
-    
-    function handleClick(e) {
-        e.preventDefault();
-        history.push("/Visualizations");
-      } //handleClick navigates the user to the visualizations when they click on the Steam button.
-
     return (
-        <div className="App">
-        <header className="App-header">
-          <button onClick={handleClick}><img src={logo} className="App-logo" alt="logo" /></button>
-          <p>
-          <h1>I LOVE MUNNA</h1>
-            <p></p>
-            WOOOOOOOOOOOOOOOOOO
-          </p>
-        </header>
+        <div className="Home">
+        <div className="left-Home">
+        <img src={logo} alt="Logo" />
+        </div>
+        <h1 className="header">Header Here</h1> {/* <---- Change this text to alter the Header*/}
+        <div className="desc-text"> {/*Change the text within the the two p's for description text*/}
+          <p> {/*Start here*/}
+          Text starts here. <br /> 
+          Use {"<br />"} to make a new line.
+          </p> {/*End here*/}
+
+        </div>
       </div>
     );
 }
