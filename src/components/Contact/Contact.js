@@ -37,7 +37,7 @@ const Contact = () => {
     else {
       axios({
         method: "POST",
-        url:"http://localhost:3002/send",
+        url:"/send",
         data: {name: Cname, email: Cemail, message: Cmessage},
       }).then((response)=>{
         if (response.data.status === 'success') {
