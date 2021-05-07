@@ -9,15 +9,17 @@ function Navigation() {
             <Link to="/" className='home'>
             Ratnajirao Mylavarapu
             </Link>
-            <Link to="/About" className='navbar-buttons'>
-                About
+            <Link to="/Contact" className='navbar-buttons'>
+                Contact
             </Link>
             <Link to="/WorkP" className='navbar-buttons'>
                 Work
             </Link>
-            <Link to="/Contact" className='navbar-buttons'>
-                Contact
+            <Link to="/About" className='navbar-buttons'>
+                About
             </Link>
+
+
             </div>
        </>
     );
