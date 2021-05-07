@@ -1,2 +1,2 @@
 # RM-Website
- Personal Website for RM
+## This is a personal website for Ratnajirao Mylavarapu created by John Hoang
