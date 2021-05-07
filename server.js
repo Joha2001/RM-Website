@@ -2,14 +2,14 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
-const creds = require('./config');
-// There are comments on where you need to change values.
+require('dotenv').config();
+// Change values in .env
 var transport = {
-    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider (Using Gmail currently)
+    host: 'smtp.gmail.com', 
     port: 587,
     auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    user: process.env.USER,
+    pass: process.env.PASS
   }
 }
 
@@ -31,7 +31,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: "EMAIL HERE",  // Change to email address that you want to receive messages on
+    to: process.env.TO_EMAIL,  
     subject: 'New Message from Contact Form',
     text: content
   }
@@ -47,7 +47,7 @@ router.post('/send', (req, res, next) => {
       })
     }
     transporter.sendMail({
-      from: "EMAIL HERE", // Change to the website email (that you used from config).
+      from: process.env.USER, 
       to: email,
       subject: "Submission was successful",
       text: `Thank you for contacting us!\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
@@ -64,5 +64,6 @@ router.post('/send', (req, res, next) => {
 const app = express()
 app.use(cors())
 app.use(express.json())
+app.use(express.static(__dirname + '/'));
 app.use('/', router)
-app.listen(3002)
+app.listen(process.env.PORT || 3002)
