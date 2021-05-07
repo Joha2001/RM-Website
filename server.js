@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 // Change values in .env
 var transport = {
